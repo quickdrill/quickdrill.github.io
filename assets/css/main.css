@@ -73,7 +73,15 @@ input, select, textarea {
 }
 
 /* Basic */
-
+.qr-code-container {
+	text-align: center; /* Center the QR code within the container */
+	margin-top: 1em; /* Optional: add some space above the QR code */
+}
+.qr-code {
+	width: 40%; /* Scale to 1/4th of original size */
+	max-width: 256px; /* Ensures it doesn’t exceed 256px (1024 / 4) */
+	height: auto; /* Maintain aspect ratio */
+}
 	@-ms-viewport {
 		width: device-width;
 	}
